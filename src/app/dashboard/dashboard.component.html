@@ -1,0 +1,10 @@
+<h3 class="card-header mt-2">Top Students</h3>
+<div class="card-deck mb-3">
+    <div *ngFor="let student of students" class="card mt-2">
+        <div class="card-body">
+            <a routerLink="/detail/{{ student.id }}" class="card-text text-center">
+                <h4>{{student.name}}</h4>
+            </a>
+        </div>
+    </div>
+</div>

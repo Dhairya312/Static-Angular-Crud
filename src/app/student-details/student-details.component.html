@@ -1,0 +1,19 @@
+<h2 class="card-header mt-1"> Edit </h2>
+<div class="my-3 p-3 bg-white rounded shadow-sm" *ngIf="student">
+    <div class="my-3 p-3 bg-white rounded shadow-sm" >
+        <h4 class="border-bottom border-gray pb-2 mb-0">{{ student.name }} Details</h4>
+        <div class="media text-muted pt-3">
+            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <span class="d-block">@Id:- {{ student.id }}</span>
+                <div class="form-inline">
+                    <div class="form-group">
+                        <label>Student Name:-</label>
+                        <input type="text" class="form-control mx-sm-3" [(ngModel)]="student.name">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn-dark rounded" (click)="goBack()">go back</button>
+    <button class="btn-primary rounded ml-2"  (click)="Save()">Save</button>
+</div>

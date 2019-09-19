@@ -1,0 +1,8 @@
+<div class="jumbotron jumbotron-fluid mt-2 rounded" *ngIf="messageService.messages.length">
+  <div class="container">
+    <p class="lead" *ngFor='let message of messageService.messages'>
+        {{message}}
+    </p>
+    <button class="btn btn-danger rounded" (click)="messageService.clear()">Clear</button>
+  </div>
+</div>

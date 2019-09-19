@@ -1,0 +1,9 @@
+.selected {
+    background-color: dimgray;
+    color: black !important;
+    z-index: 19999;
+}
+
+.delete {
+    margin-left: 70%;
+}
